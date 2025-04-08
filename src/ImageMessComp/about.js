@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const About = () => {
+    useEffect(() => {
+        document.title = "About - Anonymous Image";
+      }, []);
   return (
     <div className='w3-content'>
         <div className='w3-padding-large w3-center'>
