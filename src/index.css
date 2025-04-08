@@ -1,0 +1,70 @@
+.active{
+    color:red;
+}
+
+.link{
+    color: yellow;
+    padding: 0 10px;
+}
+
+.b{
+    width: 50px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+
+.vim{
+    height:20px;
+    width:50px;
+    background-color:blue;
+    border-radius:100px;
+    padding:1px;
+    float:right;
+    }
+    span{
+    width:22px;
+    height:18px;
+    
+    }
+    #dark{
+        float:right;
+        margin-left: 8px;
+        
+    }
+    #light{
+        float:right;
+        margin-right: 8px;
+        
+    }
+    #b{
+    float:right;
+    border-radius:100px;
+    }
+    #a{
+    float:left;
+    border-radius:100px;
+    }
+
+    .text-decor{
+        text-decoration: none;
+    }
+
+
+
+.fade-enter{
+    opacity: 0;
+}
+
+.fade-enter-active{
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit{
+    opacity: 1;
+}
+.fade-exit-active{
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+}
