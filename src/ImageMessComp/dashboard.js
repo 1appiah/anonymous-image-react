@@ -44,7 +44,7 @@ const Dashboard = (props)=>{
                     <br></br>
                     <div className="w3-aqua w3-padding-large w3-panel w3-center" style={{borderBottomRightRadius:"100px",borderTopLeftRadius:"100px"}}>
                         <p className="w3-animate-fading">Share the link below to friends to receive images anonymously them</p>
-                        <p className="">{`https://anonymous-image-react.onrender.com/send-image/${parseInt(ids)}`}</p>
+                        <p className="">{`https://anonymous-image-react.onrender.com/send-image/${parseInt(ids)}/`}</p>
                     </div>
                     <div className="w3-row-padding w3-white w3-stretch">
                         <div className="w3-half w3-animate-left">

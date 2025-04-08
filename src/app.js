@@ -19,7 +19,7 @@ function App() {
         <Route path="login" element={<Login user={setUser} token={setToken}></Login>}/>
         <Route path="all-images/" element={<AllImages></AllImages>}/>
         <Route path="about" element={<About></About>}/>
-        <Route path="send-image/:userid" element={<SendImage></SendImage>}/>
+        <Route path="send-image/:userid/" element={<SendImage></SendImage>}/>
         <Route exact path="/" element={<Dashboard></Dashboard>}/>
 
 
