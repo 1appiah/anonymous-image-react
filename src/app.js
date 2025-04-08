@@ -6,6 +6,7 @@ import AllImages from "./ImageMessComp/allimages";
 import SendImage from "./ImageMessComp/sendmess";
 import Dashboard from "./ImageMessComp/dashboard";
 import About from "./ImageMessComp/about";
+import FAke from "./ImageMessComp/fake";
 
 function App() {
     
@@ -21,6 +22,8 @@ function App() {
         <Route path="about" element={<About></About>}/>
         <Route path="send-image/:userid/" element={<SendImage></SendImage>}/>
         <Route exact path="/" element={<Dashboard></Dashboard>}/>
+        <Route exact path="*" element={<FAke/>}/>
+
 
 
       </Routes>
