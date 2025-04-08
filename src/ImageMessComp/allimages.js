@@ -89,7 +89,9 @@ const AllImages = (props)=>{
                     <h1 className="w3-padding-large ">You have no anonymous image in your gallery</h1>
                     <div className="w3-aqua w3-padding-large w3-panel w3-center" style={{borderBottomRightRadius:"100px",borderTopLeftRadius:"100px"}}>
                         <p>Share the link below to friends to receive images anonymously them</p>
-                        <p>{`http://localhost:3000/send-image/${parseInt(7)}`}</p>
+                        
+                        <p>share the link on your dashboard</p>
+
                     </div>
                     <div className="w3-row-padding w3-stretch">
                         <div className="w3-half w3-hover-lime w3-sand" style={{height:"400px"}}>
