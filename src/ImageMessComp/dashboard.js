@@ -7,7 +7,7 @@ const Dashboard = (props)=>{
     const [ids, setId] = useState("no")
     let locals = localStorage.getItem('access_token')
     const getId = ()=>{
-        axiosInstance.get(`imaging/dashboard/`,{
+        axiosInstance.get(`api/imaging/dashboard/`,{
             headers:{
         Authorization: 'JWT ' + localStorage.getItem('access_token')
     
