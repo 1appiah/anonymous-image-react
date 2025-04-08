@@ -15,7 +15,7 @@ const SendImage = ()=>{
         e.preventDefault();
         let data = new FormData()
         data.append("image",pic.image[0]);
-        axiosInstance.post(`imaging/${userid}`,data,{
+        axiosInstance.post(`api/imaging/${userid}`,data,{
             headers:{
         'Content-Type':'multipart/form-data',
     },

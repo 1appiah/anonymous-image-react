@@ -13,7 +13,7 @@ const Login = (props)=>{
         e.preventDefault()
         
 
-        axiosInstance.post(`token/`,formData)
+        axiosInstance.post(`api/token/`,formData)
         .then((res) =>{
             localStorage.setItem('access_token',res.data.access);
             localStorage.setItem('refresh_token',res.data.refresh);

@@ -11,7 +11,7 @@ const SignUp = ()=>{
         e.preventDefault()
         
 
-        axiosInstance.post(`user/register/`,formData)
+        axiosInstance.post(`api/user/register/`,formData)
         .then((res) =>{
             
             console.log(res);

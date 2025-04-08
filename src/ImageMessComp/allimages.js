@@ -16,7 +16,7 @@ const AllImages = (props)=>{
     };
     
     const getPost = ()=>{
-        axiosInstance.get(`imaging/view-image/`,{
+        axiosInstance.get(`api/imaging/view-image/`,{
             headers:{
         Authorization: 'JWT ' + localStorage.getItem('access_token')
     
