@@ -34,7 +34,7 @@ const AllImages = (props)=>{
     }
     
     const delPost = (id)=>{
-        axiosInstance.get(`imaging/delete-image/${id}`,{
+        axiosInstance.get(`api/imaging/delete-image/${id}`,{
             headers:{
         Authorization: 'JWT ' + localStorage.getItem('access_token')
     
