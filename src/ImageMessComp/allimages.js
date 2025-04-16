@@ -8,6 +8,8 @@ const AllImages = (props)=>{
 
 
     const [post, setPost] = useState([])
+    const [loading, setLoading] = useState(true);
+
     const navigate = useNavigate();
 
     const deleteImage = (id) => {
@@ -31,6 +33,9 @@ const AllImages = (props)=>{
             console.log('login',e)
             //navigate('/login')
         })
+        .finally(() => {
+            setLoading(false);
+        });
     }
     
     const delPost = (id)=>{
@@ -59,6 +64,13 @@ const AllImages = (props)=>{
         
         <div>
     <br></br>
+        {
+            loading ? (
+                <div className="w3-center w3-padding-large">
+                    <h2>Loading...</h2>
+                </div>
+            ) 
+            :
         
             <div>
                 <div className="w3-row-padding">
@@ -110,6 +122,8 @@ const AllImages = (props)=>{
 
                 </div>
             </div>
+
+        }
         </div>
 
         
