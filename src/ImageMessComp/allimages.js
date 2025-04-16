@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axiosInstance from "../axiosInstance";
 import { useNavigate } from "react-router-dom";
-
+import { timeAgo } from "./utils";
 
 const AllImages = (props)=>{
 
@@ -72,7 +72,7 @@ const AllImages = (props)=>{
                         <img src={pos.image} alt="halt" style={{maxWidth:'100%',maxHeight:'100%'}}></img>
                         <hr/>
                         
-                        <p  className="w3-center">{pos.timestamp}</p>
+                        <p  className="w3-center">{timeAgo(pos.timestamp)}</p>
                         <p className="w3-center w3-padding">
                         <button onClick={()=>deleteImage(pos.id)} className="w3-button w3-red w3-hover-brown w3-round-large w3-small">delete</button>
                         </p>
