@@ -66,8 +66,8 @@ const AllImages = (props)=>{
     <br></br>
         {
             loading ? (
-                <div className="w3-display-container w3-padding-large" style={{ minHeight: "500px" }}>
-                    <div className="w3-display-middle w3-padding-large" style={{ minHeight: "200px" }}>
+                <div className="w3-display-container w3-padding-large" style={{height: '100vh'}}>
+                    <div className="w3-display-middle w3-padding-large">
                         <TailSpin
                           height="60"
                           width="60"
