@@ -1,3 +1,6 @@
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+
 export const timeAgo = (timestamp) => {
     const now = dayjs();
     const time = dayjs(timestamp);
