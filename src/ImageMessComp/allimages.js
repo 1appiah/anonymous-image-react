@@ -28,14 +28,13 @@ const AllImages = (props)=>{
         .then((res) =>{
             console.log(res.data)
             setPost(res.data)
+            setLoading(false);
         })
         .catch(e=>{
             console.log('login',e)
             //navigate('/login')
         })
-        .finally(() => {
-            setLoading(false);
-        });
+
     }
     
     const delPost = (id)=>{
@@ -67,7 +66,17 @@ const AllImages = (props)=>{
         {
             loading ? (
                 <div className="w3-center w3-padding-large">
-                    <h2>Loading...</h2>
+                    <div className="w3-center w3-padding-large" style={{ minHeight: "200px" }}>
+                        <TailSpin
+                          height="60"
+                          width="60"
+                          color="teal"
+                          ariaLabel="loading"
+                          radius="1"
+                          visible={true}
+                        />
+                        <p>Loading...</p>
+                    </div>
                 </div>
             ) 
             :
