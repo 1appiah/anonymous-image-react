@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axiosInstance from "../axiosInstance";
 import { useNavigate } from "react-router-dom";
 import { timeAgo } from "./utils";
+import { TailSpin } from 'react-loader-spinner';
 
 const AllImages = (props)=>{
 
